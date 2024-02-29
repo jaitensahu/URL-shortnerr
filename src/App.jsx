@@ -33,9 +33,12 @@ function App() {
   // }
 
   return (
-    <>
+    <div className="flex flex-col h-[50vh] justify-center">
       <h1 className="bg-red-500 text-2xl">URL SHORTNER</h1>
-      <form action="http://localhost:5000/url-shortner/" method="post">
+      <form
+        action="https://databaseforurls.onrender.com/url-shortner/"
+        method="post"
+      >
         <input
           type="text"
           placeholder="Enter Url"
@@ -47,7 +50,7 @@ function App() {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }
 // exporlink;
